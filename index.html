@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<title>Final Project</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .textframe {
+    background-color: transparent;
+    top: 0%;
+    width: 650px;
+    height: 700px;
+    text-align: center;
+  }
+  
+  @keyframes draw{
+    from{background-color: black;}
+    to{background-color: #96DBDD;}
+  }
+  
+  .frame {
+    background-color: transparent;
+    top: 27%;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+  }
+  
+  .strokes {
+    background-color: #96DBDD;
+    position: absolute;   
+  }
+  
+    .strokes:nth-child(1) {
+      top: -5%;
+      left: 32.5%;
+      width: 35%;
+      height: 30%;
+      border-radius: 90% 10% 90% 10%;
+      transform: rotate(70deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s; 
+    }
+
+    .strokes:nth-child(2) {
+      top: 5%;
+      left: -15%;
+      width: 50%;
+      height: 30%;
+      border-radius: 40% 40% 40% 10%;
+      transform: rotate(120deg) scale(0.17);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 2s;
+    }
+
+    .strokes:nth-child(3) {
+      top: 15%;
+      left: 12%;
+      width: 80%;
+      height: 5%;
+      border-radius: 90% 10% 10% 90%/ 80% 40%;
+      transform: rotate(-2deg);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 4s;
+    }
+
+    .strokes:nth-child(4) {
+      top: 15.5%;
+      left: 78%;
+      width: 20%;
+      height: 10%;
+      border-radius: 10% 90% 90% 20%/ 80% 40%;
+      transform: rotate(140deg) scale(0.7);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 4s;
+    }
+
+    .strokes:nth-child(5) {
+      top: 25.5%;
+      left: -15%;
+      width: 80%;
+      height: 7%;
+      border-radius: 10% 90% 90% 10%/ 10% 90%;
+      transform: rotate(160deg) scale(0.5);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 6s;
+    }
+
+    .strokes:nth-child(6) {
+      top: 23%;
+      left: 35%;
+      width: 80%;
+      height: 10%;
+      border-radius: 90% 10% 10% 90%/ 90% 10%;
+      transform: rotate(20deg) scale(0.5);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 8s;
+    }
+
+    .strokes:nth-child(7) {
+      top: 12%;
+      left: 17%;
+      width: 70%;
+      height: 30%;
+      border-radius: 130% 100% 70% 60%;
+      transform: rotate(50deg) scale(0.1);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 10s;
+    }
+
+    .strokes:nth-child(8) {
+      top: 28%;
+      left: 12%;
+      width: 80%;
+      height: 10%;
+      border-radius: 50% 10% 80% 30%;
+      transform: rotate(0deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 12s;
+    }
+
+    .strokes:nth-child(9) {
+      top: 32%;
+      left: 27%;
+      width: 50%;
+      height: 10%;
+      border-radius: 60% 30% 70% 40%;
+      transform: rotate(180deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 14s;
+    }
+
+    .strokes:nth-child(10) {
+      top: 36%;
+      left: 27%;
+      width: 50%;
+      height: 10%;
+      border-radius: 60% 30% 70% 40%;
+      transform: rotate(0deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 16s;
+    }
+
+    .strokes:nth-child(11) {
+      top: 44.5%;
+      left: 22%;
+      width: 50%;
+      height: 10%;
+      border-radius: 60% 30% 30% 30%;
+      transform: rotate(90deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 18s;
+    }
+
+    .strokes:nth-child(12) {
+      top: 39%;
+      left: 26.5%;
+      width: 50%;
+      height: 10%;
+      border-radius: 90% 10% 10% 90%/ 80% 40%;
+      transform: rotate(-4deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 20s;
+    }
+
+    .strokes:nth-child(13) {
+      top: 41.5%;
+      left: 31%;
+      width: 50%;
+      height: 13%;
+      border-radius: 60% 30% 60% 60%;
+      transform: rotate(275deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 20s;
+    }
+
+    .strokes:nth-child(14) {
+      top: 50%;
+      left: 34%;
+      width: 35%;
+      height: 7%;
+      border-radius: 50% 10% 80% 30%;
+      transform: rotate(-2.5deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 22s;
+    }
+
+    .strokes:nth-child(15) {
+      top: 31%;
+      left: 7%;
+      width: 45%;
+      height: 10%;
+      border-radius: 50% 10% 80% 30%;
+      transform: rotate(-50deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 24s;
+    }
+
+    .strokes:nth-child(16) {
+      top: 36.5%;
+      left: 12.5%;
+      width: 35%;
+      height: 10%;
+      border-radius: 50% 50% 10% 60%;
+      transform: rotate(0deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 24s;
+    }
+
+    .strokes:nth-child(17) {
+      top: 40%;
+      left: -1%;
+      width: 65%;
+      height: 10%;
+      border-radius: 50% 10% 80% 30%;
+      transform: rotate(-50deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 26s;
+    }
+
+    .strokes:nth-child(18) {
+      top: 47%;
+      left: 7%;
+      width: 50%;
+      height: 10%;
+      border-radius: 30% 90% 10% 20%;
+      transform: rotate(0deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 26s;
+    }
+
+    .strokes:nth-child(19) {
+      top: 47%;
+      left: 20%;
+      width: 35%;
+      height: 10%;
+      border-radius: 30% 80%;
+      transform: rotate(45deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 28s;
+    }
+
+    .strokes:nth-child(20) {
+      top: 31%;
+      left: 45%;
+      width: 45%;
+      height: 10%;
+      border-radius: 50% 10% 80% 30%;
+      transform: rotate(-50deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 30s;
+    }
+
+    .strokes:nth-child(21) {
+      top: 36.5%;
+      left: 50.5%;
+      width: 35%;
+      height: 10%;
+      border-radius: 50% 50% 10% 60%;
+      transform: rotate(0deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 30s;
+    }
+
+    .strokes:nth-child(22) {
+      top: 40%;
+      left: 37%;
+      width: 65%;
+      height: 10%;
+      border-radius: 50% 10% 80% 30%;
+      transform: rotate(-50deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 32s;
+    }
+
+    .strokes:nth-child(23) {
+      top: 47%;
+      left: 45%;
+      width: 50%;
+      height: 10%;
+      border-radius: 30% 90% 10% 20%;
+      transform: rotate(0deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 32s;
+    }
+
+    .strokes:nth-child(24) {
+      top: 47%;
+      left: 58%;
+      width: 35%;
+      height: 10%;
+      border-radius: 30% 80%;
+      transform: rotate(45deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 34s;
+    }
+
+    .strokes:nth-child(25) {
+      top: 57%;
+      left: 0%;
+      width: 50%;
+      height: 10%;
+      border-radius: 60% 20% 20% 60%;
+      transform: rotate(270deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 36s;
+    }
+
+    .strokes:nth-child(26) {
+      top: 54%;
+      left: 13%;
+      width: 30%;
+      height: 7%;
+      border-radius: 60% 20% 20% 20%;
+      transform: rotate(-5deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 38s;
+    }
+
+    .strokes:nth-child(27) {
+      top: 57%;
+      left: 15%;
+      width: 25%;
+      height: 7%;
+      border-radius: 60% 20% 20% 20%;
+      transform: rotate(175deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 40s;
+    }
+
+    .strokes:nth-child(28) {
+      top: 59.5%;
+      left: 15%;
+      width: 25%;
+      height: 7%;
+      border-radius: 60% 20% 20% 20%;
+      transform: rotate(175deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 42s;
+    }
+
+    .strokes:nth-child(29) {
+      top: 64%;
+      left: 3%;
+      width: 50%;
+      height: 5%;
+      border-radius: 90% 20% 50% 90%/ 70% 90% 80%;
+      transform: rotate(0deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 44s;
+    }
+
+    .strokes:nth-child(30) {
+      top: 67%;
+      left: -2%;
+      width: 50%;
+      height: 8%;
+      border-radius: 60% 20% 20% 60%;
+      transform: rotate(93deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 46s;
+    }
+
+    .strokes:nth-child(31) {
+      top: 70%;
+      left: 7%;
+      width: 35%;
+      height: 10%;
+      border-radius: 50% 0% 90% 10%;
+      transform: rotate(-20deg) scale(0.15);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 46s;
+    }
+
+    .strokes:nth-child(32) {
+      top: 67%;
+      left: -5.5%;
+      width: 75%;
+      height: 8%;
+      border-radius: 90% 10% 10% 10%/ 90% 10%;
+      transform: rotate(30deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 50s;
+    }
+
+    .strokes:nth-child(33) {
+      top: 65%;
+      left: 17%;
+      width: 35%;
+      height: 10%;
+      border-radius: 50% 20% 90% 30%/ 90% 10%;
+      transform: rotate(130deg) scale(0.15);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 48s;
+    }
+
+    .strokes:nth-child(34) {
+      top: 70%;
+      left: 25.5%;
+      width: 30%;
+      height: 11%;
+      border-radius: 0% 90% 30% 50%;
+      transform: rotate(5deg) scale(0.16);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 50s;
+    }
+
+    .strokes:nth-child(35) {
+      top: 57%;
+      left: 43%;
+      width: 50%;
+      height: 10%;
+      border-radius: 60% 20% 20% 60%;
+      transform: rotate(270deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 52s;
+    }
+
+    .strokes:nth-child(36) {
+      top: 54%;
+      left: 57%;
+      width: 30%;
+      height: 7%;
+      border-radius: 60% 20% 20% 20%;
+      transform: rotate(-5deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 54s;
+    }
+
+    .strokes:nth-child(37) {
+      top: 57%;
+      left: 58%;
+      width: 25%;
+      height: 7%;
+      border-radius: 60% 20% 20% 20%;
+      transform: rotate(175deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 56s;
+    }
+
+    .strokes:nth-child(38) {
+      top: 59.5%;
+      left: 58%;
+      width: 25%;
+      height: 7%;
+      border-radius: 60% 20% 20% 20%;
+      transform: rotate(175deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 58s;
+    }
+
+    .strokes:nth-child(39) {
+      top: 64%;
+      left: 46%;
+      width: 50%;
+      height: 5%;
+      border-radius: 90% 20% 50% 90%/ 70% 90% 80%;
+      transform: rotate(0deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 60s;
+    }
+
+    .strokes:nth-child(40) {
+      top: 67%;
+      left: 41%;
+      width: 50%;
+      height: 8%;
+      border-radius: 60% 20% 20% 60%;
+      transform: rotate(93deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 62s;
+    }
+
+    .strokes:nth-child(41) {
+      top: 70%;
+      left: 50%;
+      width: 35%;
+      height: 10%;
+      border-radius: 50% 0% 90% 10%;
+      transform: rotate(-20deg) scale(0.15);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 62s;
+    }
+
+    .strokes:nth-child(42) {
+      top: 67%;
+      left: 37.5%;
+      width: 75%;
+      height: 8%;
+      border-radius: 90% 10% 10% 10%/ 90% 10%;
+      transform: rotate(30deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 66s;
+    }
+
+    .strokes:nth-child(43) {
+      top: 65%;
+      left: 60%;
+      width: 35%;
+      height: 10%;
+      border-radius: 50% 20% 90% 30%/ 90% 10%;
+      transform: rotate(130deg) scale(0.15);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 64s;
+    }
+
+    .strokes:nth-child(44) {
+      top: 70%;
+      left: 68.5%;
+      width: 30%;
+      height: 11%;
+      border-radius: 0% 90% 30% 50%;
+      transform: rotate(5deg) scale(0.16);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 66s;
+    }
+  
+  	.strokes:nth-child(45) {
+      top: 58%;
+      left: 20%;
+      width: 55%;
+      height: 10%;
+      border-radius: 60% 90% 20% 60%;
+      transform: rotate(270deg) scale(0.22);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 68s;
+    }
+  
+    .strokes:nth-child(46) {
+      top: 54%;
+      left: 33%;
+      width: 40%;
+      height: 7%;
+      border-radius: 20% 90% 20% 20%;
+      transform: rotate(-5deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 70s;
+    }
+  
+  	.strokes:nth-child(47) {
+      top: 59%;
+      left: 28%;
+      width: 50%;
+      height: 8%;
+      border-radius: 30% 30% 30% 30%;
+      transform: rotate(270deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 72s;
+    }
+  
+    .strokes:nth-child(48) {
+      top: 58%;
+      left: 33.5%;
+      width: 40%;
+      height: 7%;
+      border-radius: 20% 90% 20% 90%;
+      transform: rotate(-5deg) scale(0.17);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 74s;
+    }
+  
+    .strokes:nth-child(49) {
+      top: 61%;
+      left: 33.5%;
+      width: 40%;
+      height: 7%;
+      border-radius: 20% 90% 20% 90%;
+      transform: rotate(-5deg) scale(0.17);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 76s;
+    }
+  
+    .strokes:nth-child(50) {
+      top: 64%;
+      left: 19%;
+      width: 70%;
+      height: 8%;
+      border-radius: 90% 10% 10% 90%/ 80% 40%;
+      transform: rotate(-5deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 78s;
+    }
+  
+    .strokes:nth-child(51) {
+      top: 69%;
+      left: 25%;
+      width: 70%;
+      height: 10%;
+      border-radius: 90% 10% 10% 90%/ 80% 40%;
+      transform: rotate(270deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 78s;
+    }
+  
+    .strokes:nth-child(52) {
+      top: 74%;
+      left: 43%;
+      width: 30%;
+      height: 11%;
+      border-radius: 90% 10% 10% 90%;
+      transform: rotate(20deg) scale(0.17);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 78s;
+    }
+  
+    .strokes:nth-child(53) {
+      top: 58%;
+      left: 15%;
+      width: 60%;
+      height: 30%;
+      border-radius: 90% 10% 90% 10%;
+      transform: rotate(-40deg) scale(0.1);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 80s;
+    }
+  
+   .strokes:nth-child(54) {
+      top: 59%;
+      left: 15%;
+      width: 70%;
+      height: 30%;
+      border-radius: 130% 100% 70% 60%;
+      transform: rotate(70deg) scale(0.07);
+     	animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 82s;
+    }
+  
+   .strokes:nth-child(55) {
+      top: 58%;
+      left: 18%;
+      width: 70%;
+      height: 30%;
+      border-radius: 130% 100% 70% 60%;
+      transform: rotate(80deg) scale(0.06);
+     	animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 84s;
+    }
+  
+    .strokes:nth-child(56) {
+      top: 57%;
+      left: 21%;
+      width: 70%;
+      height: 30%;
+      border-radius: 130% 100% 70% 60%;
+      transform: rotate(90deg) scale(0.05);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 86s;
+    }
+  
+    .strokes:nth-child(57) {
+      top: 75%;
+      left: -25%;
+      width: 80%;
+      height: 30%;
+      border-radius: 40% 40% 40% 10%;
+      transform: rotate(150deg) scale(0.15);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 88s;
+    }
+  
+  	.strokes:nth-child(58) {
+      top: 87%;
+      left: 15%;
+      width: 40%;
+      height: 8%;
+      border-radius: 90% 90% 90% 10%/90%;
+      transform: rotate(40deg) scale(0.5);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 90s;
+    }
+  
+	  .strokes:nth-child(59) {
+      top: 92%;
+      left: 16%;
+      width: 90%;
+      height: 8%;
+      border-radius: 10% 90% 90% 10%/ 10% 90%;
+      transform: rotate(0deg) scale(0.5);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 90s;
+    }
+  
+    .strokes:nth-child(60) {
+      top: 89%;
+      left: 64%;
+      width: 30%;
+      height: 10%;
+      border-radius: 10% 90% 90% 20%/ 80% 40%;
+      transform: rotate(40deg) scale(0.4);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 90s;
+    }
+  
+    .strokes:nth-child(61) {
+      top: 68%;
+      left: 10%;
+      width: 75%;
+      height: 30%;
+      border-radius: 90% 10% 90% 10%;
+      transform: rotate(40deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 92s;
+    }
+  
+    .strokes:nth-child(62) {
+      top: 80%;
+      left: 65%;
+      width: 40%;
+      height: 10%;
+      border-radius: 90% 10% 10% 90%/ 90% 10%;
+      transform: rotate(30deg) scale(0.5);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 94s;
+    }
+  
+    .strokes:nth-child(63) {
+      top: 55%;
+      left: -25%;
+      width: 60%;
+      height: 5%;
+      border-radius: 40% 90% 30% 80%;
+      transform: rotate(270deg) scale(0.7);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 96s;
+    }
+  
+  	.strokes:nth-child(64) {
+      top: 73%;
+      left: -22%;
+      width: 50%;
+      height: 15%;
+      border-radius: 90% 40% 40% 90%/ 40% 80%;
+      transform: rotate(-70deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 96s;
+    }
+  
+  	.strokes:nth-child(65) {
+      top: 32%;
+      left: -22.5%;
+      width: 70%;
+      height: 10%;
+      border-radius: 50% 10% 80% 30%;
+      transform: rotate(0deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 98s;
+    }
+  
+    .strokes:nth-child(66) {
+      top: 57%;
+      left: -14%;
+      width: 65%;
+      height: 4%;
+      border-radius: 90% 10% 30% 90%;
+      transform: rotate(270deg) scale(0.7);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 98s;
+    }
+  
+    .strokes:nth-child(67) {
+      top: 75%;
+      left: 1%;
+      width: 30%;
+      height: 10%;
+      border-radius: 10% 90% 90% 20%/ 80% 40%;
+      transform: rotate(200deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 98s;
+    }
+  
+    .strokes:nth-child(68) {
+      top: 48.5%;
+      left: -15%;
+      width: 50%;
+      height: 7%;
+      border-radius: 10% 90% 90% 10%/ 10% 90%;
+      transform: rotate(180deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 100s;
+    }
+  
+    .strokes:nth-child(69) {
+      top: 62.5%;
+      left: -15%;
+      width: 50%;
+      height: 7%;
+      border-radius: 10% 90% 90% 10%/ 10% 90%;
+      transform: rotate(180deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 102s;
+    }
+  
+    .strokes:nth-child(70) {
+      top: 50%;
+      left: 60%;
+      width: 50%;
+      height: 7%;
+      border-radius: 10% 90% 90% 10%/ 10% 90%;
+      transform: rotate(90deg) scale(0.5);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 104s;
+    }
+  
+    .strokes:nth-child(71) {
+      top: 57%;
+      left: 47%;
+      width: 90%;
+      height: 7%;
+      border-radius: 10% 90% 90% 10%/ 10% 90%;
+      transform: rotate(270deg) scale(0.5);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 106s;
+    }
+  
+    .strokes:nth-child(72) {
+      top: 75.5%;
+      left: 73%;
+      width: 30%;
+      height: 10%;
+      border-radius: 10% 90% 90% 20%/ 80% 40%;
+      transform: rotate(200deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 106s;
+    }
+  
+    .strokes:nth-child(73) {
+      top: 25%;
+      left: -20%;
+      width: 20%;
+      height: 10%;
+      border-radius: 10% 90% 90% 20%/ 80% 40%;
+      transform: rotate(210deg) scale(0.75);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 108s;
+    }
+  
+    .strokes:nth-child(74) {
+      top: 39%;
+      left: -30%;
+      width: 40%;
+      height: 10%;
+      border-radius: 90% 10% 10% 90%/ 90% 10%;
+      transform: rotate(-30deg) scale(0.4);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 110s;
+    }
+  
+    .strokes:nth-child(75) {
+      top: 45%;
+      left: -37%;
+      width: 65%;
+      height: 10%;
+      border-radius: 90% 10% 10% 90%/ 90% 10%;
+      transform: rotate(100deg) scale(0.3);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 110s;
+    }
+  
+    .strokes:nth-child(76) {
+      top: 55%;
+      left: -25%;
+      width: 45%;
+      height: 10%;
+      border-radius: 90% 10% 10% 90%/ 90% 10%;
+      transform: rotate(25deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 110s;
+    }
+  
+    .strokes:nth-child(77) {
+      top: 72.5%;
+      left: -41.5%;
+      width: 80%;
+      height: 8%;
+      border-radius: 90% 10% 10% 90%/ 60% 20%;
+      transform: rotate(280deg) scale(0.4);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 110s;
+    }
+  
+    .strokes:nth-child(78) {
+      top: 52.5%;
+      left: -17%;
+      width: 15%;
+      height: 90%;
+      border-radius: 90% 10% 90% 10%;
+      transform: rotate(40deg) scale(0.2);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 110s;
+    }
+  
+  	.strokes:nth-child(79) {
+      top: 89%;
+      left: -32%;
+      width: 70%;
+      height: 15%;
+      border-radius: 40% 40% 40% 10%;
+      transform: rotate(30deg) scale(0.25);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 112s;
+    }
+  
+    .strokes:nth-child(80) {
+      top: 99%;
+      left: 8%;
+      width: 90%;
+      height: 5%;
+      border-radius: 90% 10% 10% 90%/ 60% 40%;
+      transform: rotate(182deg);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 112s;
+    }
+  
+    .strokes:nth-child(81) {
+      top: 96.5%;
+      left: 77%;
+      width: 30%;
+      height: 10%;
+      border-radius: 90% 10% 20% 90%/ 40% 80%;
+      transform: rotate(-10deg) scale(0.7);
+      animation-name: draw;
+      animation-duration: 3s;
+      animation-delay: 112s;
+    }
+  .pictureframe {
+    background-color: transparent;
+    top: 97%;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+  }
+</style>
+
+<body bgcolor="black" text=white>
+	<div class="textframe">
+  	<h1 style="color: #157073">BIANG</h1>
+  	<h3>The most complicated Chinese character with 56 strokes</h3>
+  	<h3>On its own, Biang has no meaning, but it is part of the 
+      Biang Biang Noodles, which is a long noodle dish from Shaanxi 
+      Province named after the sound that the noodles make when 
+      slapped against the counter.</h3>
+  </div>
+  
+  <div class="frame">
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+      <div class="strokes"></div>
+  </div>
+  <div class="pictureframe">
+    	<img src="transparent-cute-pixel.gif" alt="cute cat chasing a pixel">
+  </div>
+</body>
+
+
+
+
