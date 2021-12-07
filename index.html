@@ -7,19 +7,17 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   
   .textframe {
     background-color: transparent;
     top: 0%;
     width: 650px;
-    height: 700px;
     text-align: center;
   }
   
   @keyframes draw{
-    from{background-color: black;}
+    from{background-color: transparent;}
     to{background-color: #96DBDD;}
   }
   
@@ -32,8 +30,11 @@
   }
   
   .strokes {
-    background-color: #96DBDD;
-    position: absolute;   
+    background-color: transparent;
+    position: absolute; 
+    animation-name: draw;
+    animation-fill-mode: forwards;
+    animation-duration: 2s; 
   }
   
     .strokes:nth-child(1) {
@@ -42,9 +43,7 @@
       width: 35%;
       height: 30%;
       border-radius: 90% 10% 90% 10%;
-      transform: rotate(70deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 2s; 
+      transform: rotate(70deg) scale(0.2); 
     }
 
     .strokes:nth-child(2) {
@@ -54,8 +53,6 @@
       height: 30%;
       border-radius: 40% 40% 40% 10%;
       transform: rotate(120deg) scale(0.17);
-      animation-name: draw;
-      animation-duration: 2s;
       animation-delay: 2s;
     }
 
@@ -66,8 +63,6 @@
       height: 5%;
       border-radius: 90% 10% 10% 90%/ 80% 40%;
       transform: rotate(-2deg);
-      animation-name: draw;
-      animation-duration: 2s;
       animation-delay: 4s;
     }
 
@@ -78,8 +73,6 @@
       height: 10%;
       border-radius: 10% 90% 90% 20%/ 80% 40%;
       transform: rotate(140deg) scale(0.7);
-      animation-name: draw;
-      animation-duration: 2s;
       animation-delay: 4s;
     }
 
@@ -90,8 +83,6 @@
       height: 7%;
       border-radius: 10% 90% 90% 10%/ 10% 90%;
       transform: rotate(160deg) scale(0.5);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 6s;
     }
 
@@ -102,8 +93,6 @@
       height: 10%;
       border-radius: 90% 10% 10% 90%/ 90% 10%;
       transform: rotate(20deg) scale(0.5);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 8s;
     }
 
@@ -114,8 +103,6 @@
       height: 30%;
       border-radius: 130% 100% 70% 60%;
       transform: rotate(50deg) scale(0.1);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 10s;
     }
 
@@ -126,8 +113,6 @@
       height: 10%;
       border-radius: 50% 10% 80% 30%;
       transform: rotate(0deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 12s;
     }
 
@@ -138,8 +123,6 @@
       height: 10%;
       border-radius: 60% 30% 70% 40%;
       transform: rotate(180deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 14s;
     }
 
@@ -150,8 +133,6 @@
       height: 10%;
       border-radius: 60% 30% 70% 40%;
       transform: rotate(0deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 16s;
     }
 
@@ -162,8 +143,6 @@
       height: 10%;
       border-radius: 60% 30% 30% 30%;
       transform: rotate(90deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 18s;
     }
 
@@ -174,8 +153,6 @@
       height: 10%;
       border-radius: 90% 10% 10% 90%/ 80% 40%;
       transform: rotate(-4deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 20s;
     }
 
@@ -186,8 +163,6 @@
       height: 13%;
       border-radius: 60% 30% 60% 60%;
       transform: rotate(275deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 20s;
     }
 
@@ -198,8 +173,6 @@
       height: 7%;
       border-radius: 50% 10% 80% 30%;
       transform: rotate(-2.5deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 22s;
     }
 
@@ -210,8 +183,6 @@
       height: 10%;
       border-radius: 50% 10% 80% 30%;
       transform: rotate(-50deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 24s;
     }
 
@@ -222,8 +193,6 @@
       height: 10%;
       border-radius: 50% 50% 10% 60%;
       transform: rotate(0deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 24s;
     }
 
@@ -234,8 +203,6 @@
       height: 10%;
       border-radius: 50% 10% 80% 30%;
       transform: rotate(-50deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 26s;
     }
 
@@ -246,8 +213,6 @@
       height: 10%;
       border-radius: 30% 90% 10% 20%;
       transform: rotate(0deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 26s;
     }
 
@@ -258,8 +223,6 @@
       height: 10%;
       border-radius: 30% 80%;
       transform: rotate(45deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 28s;
     }
 
@@ -270,8 +233,6 @@
       height: 10%;
       border-radius: 50% 10% 80% 30%;
       transform: rotate(-50deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 30s;
     }
 
@@ -282,8 +243,6 @@
       height: 10%;
       border-radius: 50% 50% 10% 60%;
       transform: rotate(0deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 30s;
     }
 
@@ -294,8 +253,6 @@
       height: 10%;
       border-radius: 50% 10% 80% 30%;
       transform: rotate(-50deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 32s;
     }
 
@@ -306,8 +263,6 @@
       height: 10%;
       border-radius: 30% 90% 10% 20%;
       transform: rotate(0deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 32s;
     }
 
@@ -318,8 +273,6 @@
       height: 10%;
       border-radius: 30% 80%;
       transform: rotate(45deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 34s;
     }
 
@@ -330,8 +283,6 @@
       height: 10%;
       border-radius: 60% 20% 20% 60%;
       transform: rotate(270deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 36s;
     }
 
@@ -342,8 +293,6 @@
       height: 7%;
       border-radius: 60% 20% 20% 20%;
       transform: rotate(-5deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 38s;
     }
 
@@ -354,8 +303,6 @@
       height: 7%;
       border-radius: 60% 20% 20% 20%;
       transform: rotate(175deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 40s;
     }
 
@@ -366,8 +313,6 @@
       height: 7%;
       border-radius: 60% 20% 20% 20%;
       transform: rotate(175deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 42s;
     }
 
@@ -378,8 +323,6 @@
       height: 5%;
       border-radius: 90% 20% 50% 90%/ 70% 90% 80%;
       transform: rotate(0deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 44s;
     }
 
@@ -390,8 +333,6 @@
       height: 8%;
       border-radius: 60% 20% 20% 60%;
       transform: rotate(93deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 46s;
     }
 
@@ -402,8 +343,6 @@
       height: 10%;
       border-radius: 50% 0% 90% 10%;
       transform: rotate(-20deg) scale(0.15);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 46s;
     }
 
@@ -414,8 +353,6 @@
       height: 8%;
       border-radius: 90% 10% 10% 10%/ 90% 10%;
       transform: rotate(30deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 50s;
     }
 
@@ -426,8 +363,6 @@
       height: 10%;
       border-radius: 50% 20% 90% 30%/ 90% 10%;
       transform: rotate(130deg) scale(0.15);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 48s;
     }
 
@@ -438,8 +373,6 @@
       height: 11%;
       border-radius: 0% 90% 30% 50%;
       transform: rotate(5deg) scale(0.16);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 50s;
     }
 
@@ -450,8 +383,6 @@
       height: 10%;
       border-radius: 60% 20% 20% 60%;
       transform: rotate(270deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 52s;
     }
 
@@ -462,8 +393,6 @@
       height: 7%;
       border-radius: 60% 20% 20% 20%;
       transform: rotate(-5deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 54s;
     }
 
@@ -474,8 +403,6 @@
       height: 7%;
       border-radius: 60% 20% 20% 20%;
       transform: rotate(175deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 56s;
     }
 
@@ -486,8 +413,6 @@
       height: 7%;
       border-radius: 60% 20% 20% 20%;
       transform: rotate(175deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 58s;
     }
 
@@ -498,8 +423,6 @@
       height: 5%;
       border-radius: 90% 20% 50% 90%/ 70% 90% 80%;
       transform: rotate(0deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 60s;
     }
 
@@ -510,8 +433,6 @@
       height: 8%;
       border-radius: 60% 20% 20% 60%;
       transform: rotate(93deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 62s;
     }
 
@@ -522,8 +443,6 @@
       height: 10%;
       border-radius: 50% 0% 90% 10%;
       transform: rotate(-20deg) scale(0.15);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 62s;
     }
 
@@ -534,8 +453,6 @@
       height: 8%;
       border-radius: 90% 10% 10% 10%/ 90% 10%;
       transform: rotate(30deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 66s;
     }
 
@@ -546,8 +463,6 @@
       height: 10%;
       border-radius: 50% 20% 90% 30%/ 90% 10%;
       transform: rotate(130deg) scale(0.15);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 64s;
     }
 
@@ -558,8 +473,6 @@
       height: 11%;
       border-radius: 0% 90% 30% 50%;
       transform: rotate(5deg) scale(0.16);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 66s;
     }
   
@@ -570,8 +483,6 @@
       height: 10%;
       border-radius: 60% 90% 20% 60%;
       transform: rotate(270deg) scale(0.22);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 68s;
     }
   
@@ -582,8 +493,6 @@
       height: 7%;
       border-radius: 20% 90% 20% 20%;
       transform: rotate(-5deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 70s;
     }
   
@@ -594,8 +503,6 @@
       height: 8%;
       border-radius: 30% 30% 30% 30%;
       transform: rotate(270deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 72s;
     }
   
@@ -606,8 +513,6 @@
       height: 7%;
       border-radius: 20% 90% 20% 90%;
       transform: rotate(-5deg) scale(0.17);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 74s;
     }
   
@@ -618,8 +523,6 @@
       height: 7%;
       border-radius: 20% 90% 20% 90%;
       transform: rotate(-5deg) scale(0.17);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 76s;
     }
   
@@ -630,8 +533,6 @@
       height: 8%;
       border-radius: 90% 10% 10% 90%/ 80% 40%;
       transform: rotate(-5deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 78s;
     }
   
@@ -642,8 +543,6 @@
       height: 10%;
       border-radius: 90% 10% 10% 90%/ 80% 40%;
       transform: rotate(270deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 78s;
     }
   
@@ -654,8 +553,6 @@
       height: 11%;
       border-radius: 90% 10% 10% 90%;
       transform: rotate(20deg) scale(0.17);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 78s;
     }
   
@@ -666,8 +563,6 @@
       height: 30%;
       border-radius: 90% 10% 90% 10%;
       transform: rotate(-40deg) scale(0.1);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 80s;
     }
   
@@ -678,8 +573,6 @@
       height: 30%;
       border-radius: 130% 100% 70% 60%;
       transform: rotate(70deg) scale(0.07);
-     	animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 82s;
     }
   
@@ -690,8 +583,6 @@
       height: 30%;
       border-radius: 130% 100% 70% 60%;
       transform: rotate(80deg) scale(0.06);
-     	animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 84s;
     }
   
@@ -702,8 +593,6 @@
       height: 30%;
       border-radius: 130% 100% 70% 60%;
       transform: rotate(90deg) scale(0.05);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 86s;
     }
   
@@ -714,8 +603,6 @@
       height: 30%;
       border-radius: 40% 40% 40% 10%;
       transform: rotate(150deg) scale(0.15);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 88s;
     }
   
@@ -726,8 +613,6 @@
       height: 8%;
       border-radius: 90% 90% 90% 10%/90%;
       transform: rotate(40deg) scale(0.5);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 90s;
     }
   
@@ -738,8 +623,6 @@
       height: 8%;
       border-radius: 10% 90% 90% 10%/ 10% 90%;
       transform: rotate(0deg) scale(0.5);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 90s;
     }
   
@@ -750,8 +633,6 @@
       height: 10%;
       border-radius: 10% 90% 90% 20%/ 80% 40%;
       transform: rotate(40deg) scale(0.4);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 90s;
     }
   
@@ -762,8 +643,6 @@
       height: 30%;
       border-radius: 90% 10% 90% 10%;
       transform: rotate(40deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 92s;
     }
   
@@ -774,8 +653,6 @@
       height: 10%;
       border-radius: 90% 10% 10% 90%/ 90% 10%;
       transform: rotate(30deg) scale(0.5);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 94s;
     }
   
@@ -786,8 +663,6 @@
       height: 5%;
       border-radius: 40% 90% 30% 80%;
       transform: rotate(270deg) scale(0.7);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 96s;
     }
   
@@ -798,8 +673,6 @@
       height: 15%;
       border-radius: 90% 40% 40% 90%/ 40% 80%;
       transform: rotate(-70deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 96s;
     }
   
@@ -810,8 +683,6 @@
       height: 10%;
       border-radius: 50% 10% 80% 30%;
       transform: rotate(0deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 98s;
     }
   
@@ -822,8 +693,6 @@
       height: 4%;
       border-radius: 90% 10% 30% 90%;
       transform: rotate(270deg) scale(0.7);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 98s;
     }
   
@@ -834,8 +703,6 @@
       height: 10%;
       border-radius: 10% 90% 90% 20%/ 80% 40%;
       transform: rotate(200deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 98s;
     }
   
@@ -846,8 +713,6 @@
       height: 7%;
       border-radius: 10% 90% 90% 10%/ 10% 90%;
       transform: rotate(180deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 100s;
     }
   
@@ -858,8 +723,6 @@
       height: 7%;
       border-radius: 10% 90% 90% 10%/ 10% 90%;
       transform: rotate(180deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 102s;
     }
   
@@ -870,8 +733,6 @@
       height: 7%;
       border-radius: 10% 90% 90% 10%/ 10% 90%;
       transform: rotate(90deg) scale(0.5);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 104s;
     }
   
@@ -882,8 +743,6 @@
       height: 7%;
       border-radius: 10% 90% 90% 10%/ 10% 90%;
       transform: rotate(270deg) scale(0.5);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 106s;
     }
   
@@ -894,8 +753,6 @@
       height: 10%;
       border-radius: 10% 90% 90% 20%/ 80% 40%;
       transform: rotate(200deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 106s;
     }
   
@@ -906,8 +763,6 @@
       height: 10%;
       border-radius: 10% 90% 90% 20%/ 80% 40%;
       transform: rotate(210deg) scale(0.75);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 108s;
     }
   
@@ -918,8 +773,6 @@
       height: 10%;
       border-radius: 90% 10% 10% 90%/ 90% 10%;
       transform: rotate(-30deg) scale(0.4);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 110s;
     }
   
@@ -930,8 +783,6 @@
       height: 10%;
       border-radius: 90% 10% 10% 90%/ 90% 10%;
       transform: rotate(100deg) scale(0.3);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 110s;
     }
   
@@ -942,8 +793,6 @@
       height: 10%;
       border-radius: 90% 10% 10% 90%/ 90% 10%;
       transform: rotate(25deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 110s;
     }
   
@@ -954,8 +803,6 @@
       height: 8%;
       border-radius: 90% 10% 10% 90%/ 60% 20%;
       transform: rotate(280deg) scale(0.4);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 110s;
     }
   
@@ -966,8 +813,6 @@
       height: 90%;
       border-radius: 90% 10% 90% 10%;
       transform: rotate(40deg) scale(0.2);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 110s;
     }
   
@@ -978,8 +823,6 @@
       height: 15%;
       border-radius: 40% 40% 40% 10%;
       transform: rotate(30deg) scale(0.25);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 112s;
     }
   
@@ -990,8 +833,6 @@
       height: 5%;
       border-radius: 90% 10% 10% 90%/ 60% 40%;
       transform: rotate(182deg);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 112s;
     }
   
@@ -1002,8 +843,6 @@
       height: 10%;
       border-radius: 90% 10% 20% 90%/ 40% 80%;
       transform: rotate(-10deg) scale(0.7);
-      animation-name: draw;
-      animation-duration: 3s;
       animation-delay: 112s;
     }
   .pictureframe {
